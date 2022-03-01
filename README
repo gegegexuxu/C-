@@ -1,0 +1,44 @@
+--------用C语言实现C语言编译器---------
+具备功能：
+  支持多数常用的函数，如输入输出、if、while循环等等
+  与正常的编译器一样，会对输入的代码格式正确与否进行判断
+  对于出现的错误，会模仿编译器进行提示类型，并精确到代码位置（行）
+  简易的C语言编译器，实现常用功能
+ 
+测试案例：
+1.（1）输入
+      int a;
+      float b;
+      a=(1+9)*8;
+      write(a);
+      b=9/2;
+      write(b).
+  
+  （2）输出
+     80
+     4.5
+
+2.（1）输入
+      int int;
+      float b;
+      a=(1+9)*8;
+      write(a);
+      b=9/2;
+      write(b).
+  （2）输出
+      Line 1: Warning: The Variable Is Repeatedly Declared!
+      Line 1: [Error]: Unrecongnizable Variable!
+      Line 4: [Error]: Undeclared Variable!
+      Line 5: [Error]:Undeclared Variable!
+
+3.（1）输入
+      int a;
+      float b;
+      a=(1+9)*8;
+      write(a);
+      b=9/0;
+      write(b).
+  （2）输出
+      Line 6: [Error]:0 Can Not Be Divisor!
+      Line 6: [Error]: Illegal Conversion!
+      
